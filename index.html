@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAPAN.TRAVEL.GUIDEBOOKS - Your Journey Starts Here</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation Bar (Mobile First & Responsive) -->
+    <header class="bg-white border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo & Brand Name -->
+            <div class="flex items-center space-x-3">
+                <img src="logo.jpg" alt="JAPAN.TRAVEL.GUIDEBOOKS Logo" class="w-10 h-10 rounded-full object-cover border border-gray-200">
+                <span class="text-base sm:text-lg font-bold tracking-tight text-gray-900">JAPAN.TRAVEL.GUIDEBOOKS</span>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex space-x-6 text-sm font-medium text-gray-600">
+                <a href="#destinations" class="hover:text-red-600 transition">Destinations</a>
+                <a href="#things-to-do" class="hover:text-red-600 transition">Things to Do</a>
+                <a href="#food" class="hover:text-red-600 transition">Food & Drink</a>
+                <a href="#guide" class="hover:text-red-600 transition">Travel Guide</a>
+                <a href="#culture" class="hover:text-red-600 transition">Culture & Etiquette</a>
+                <a href="#tips" class="hover:text-red-600 transition">Travel Tips</a>
+                <a href="#about" class="hover:text-red-600 transition">About / Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="lg:hidden text-gray-700 focus:outline-none p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-gray-100 px-4 pt-2 pb-6 space-y-3">
+            <a href="#destinations" class="block text-gray-700 font-medium py-2 border-b border-gray-50">Destinations</a>
+            <a href="#things-to-do" class="block text-gray-700 font-medium py-2 border-b border-gray-50">Things to Do</a>
+            <a href="#food" class="block text-gray-700 font-medium py-2 border-b border-gray-50">Food & Drink</a>
+            <a href="#guide" class="block text-gray-700 font-medium py-2 border-b border-gray-50">Travel Guide</a>
+            <a href="#culture" class="block text-gray-700 font-medium py-2 border-b border-gray-50">Culture & Etiquette</a>
+            <a href="#tips" class="block text-gray-700 font-medium py-2 border-b border-gray-50">Travel Tips</a>
+            <a href="#about" class="block text-gray-700 font-medium py-2">About / Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gray-900 text-white py-24 sm:py-32 lg:py-40">
+        <div class="absolute inset-0 overflow-hidden opacity-40">
+            <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1920&q=80" alt="Japan Scenery" class="w-full h-full object-cover">
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6">Your Journey to Japan Starts Here.</h1>
+            <p class="text-base sm:text-xl max-w-2xl mx-auto text-gray-200 mb-8 sm:mb-10">Discover hidden gems, unforgettable experiences, and authentic Japanese culture with our comprehensive first-timer guides.</p>
+            <a href="#destinations" class="inline-block bg-red-600 hover:bg-red-700 text-white font-medium px-8 py-4 rounded-full transition shadow-lg text-sm sm:text-base">Explore Destinations &rarr;</a>
+        </div>
+    </section>
+
+    <!-- Main Categories Grid -->
+    <section id="destinations" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        <div class="text-center mb-12 sm:mb-16">
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">Plan Your Trip with Confidence</h2>
+            <p class="text-gray-600 text-sm sm:text-base mt-2">Everything you need to know from planning to arrival.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+                <div class="h-48 bg-gray-200 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80" alt="Destinations" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">01. Destinations</h3>
+                    <p class="text-gray-600 text-sm mb-4">Explore iconic cities and hidden regional gems across Tokyo, Kyoto, Osaka, and beyond.</p>
+                    <span class="text-red-600 font-medium text-sm">Coming Soon &rarr;</span>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div id="things-to-do" class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+                <div class="h-48 bg-gray-200 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=800&q=80" alt="Food & Drink" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">02. Things to Do & Food</h3>
+                    <p class="text-gray-600 text-sm mb-4">Navigate Japanese cuisine, izakaya culture, and find vegan-friendly options easily.</p>
+                    <span class="text-red-600 font-medium text-sm">Coming Soon &rarr;</span>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div id="guide" class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+                <div class="h-48 bg-gray-200 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80" alt="Travel Guide" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">03. Travel Guide & Tips</h3>
+                    <p class="text-gray-600 text-sm mb-4">Essential tips on eSIMs, IC cards (Suica/Pasmo), transit, and emergency readiness.</p>
+                    <span class="text-red-600 font-medium text-sm">Coming Soon &rarr;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Tips & About Section -->
+    <section id="tips" class="bg-gray-100 py-16 sm:py-20 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Travel Tips & Etiquette</h3>
+                <p class="text-gray-600 mb-4 text-sm sm:text-base">Avoid cultural pitfalls and travel smoothly. Learn about temple manners, tipping customs, cash vs. card, and how to ride public transit like a local.</p>
+                <span class="text-red-600 font-medium text-sm">Explore Travel Tips &rarr;</span>
+            </div>
+            <div id="about">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">About Us / Contact</h3>
+                <p class="text-gray-600 mb-4 text-sm sm:text-base">We are dedicated to helping first-time travelers experience the true beauty of Japan with complete peace of mind. Have questions? Reach out to our team.</p>
+                <span class="text-red-600 font-medium text-sm">Contact Support &rarr;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-500">
+            <p>&copy; 2026 JAPAN.TRAVEL.GUIDEBOOKS. All rights reserved.</p>
+            <p class="mt-2">Affiliate Disclosure: This site contains affiliate links to travel services.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
